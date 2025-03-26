@@ -1,0 +1,37 @@
+Review1.cs => int elapsedTimeInDays
+
+Review2.cs => List ListOfEmployees = db.GetEmployeeListFromService().ToList(); 
+
+Review3.cs =>   int counter;
+                string fullName;
+                DateTime modifiedDate;
+
+Review4.cs => public bool IsShopOpen(string Day, int Amount)
+                {
+                    // some logic
+                }
+
+Review5.cs =>   const int DaysInWeek = 7;
+                const int DaysInMonth = 30;
+
+                List<string> songs = new List<string> { 'Back In Black', 'Stairway to Heaven', 'Hey Jude' };
+                List<string> artists = new List<string> { 'ACDC', 'Led Zeppelin', 'The Beatles' };
+
+                bool EraseDatabase() {}
+                bool RestoreDatabase() {}
+
+                class Animal {}
+                class Alpaca {}
+
+Review6.cs => public class Employee
+            {
+                public Datetime StartWorkDate { get; set; } // get set Start Working Date
+                public Datetime ModificationTime { get; set; } // get set Modification Time
+            }
+
+Review7.cs => var employeePhone;
+
+                public double CalculateSalary(int workingDays, int workingHours)
+                {
+                    // some logic
+                }
