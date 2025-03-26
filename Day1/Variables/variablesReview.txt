@@ -1,0 +1,79 @@
+Review 1 : "1. Having a new function inside the isShopOpen which would return a bool value"
+           "2. Reducing cognitive Complexity using switch case"
+           Corrected code: "public bool IsShopOpen(string day)
+                              {
+                                  if (string.IsNullOrEmpty(day))
+                                  {
+                                      return false;
+                                  }
+
+                                  day = day.ToLower();
+                                  return IsWeekend(day);
+                              }
+
+                              private bool IsWeekend(string day)
+                              {
+                                  return day == "friday" || day == "saturday" || day == "sunday";
+                              }"
+
+Review 2 : "Very high congnitive score"
+          Corrected code:
+          public long Fibonacci(int n)
+          {
+              const int MaxSupportedValue = 50;
+
+              if (n >= MaxSupportedValue)
+              {
+                  throw new NotSupportedException($"Input value {n} is not supported. Must be less than {MaxSupportedValue}.");
+              }
+
+              if (n == 0) return 0;
+              if (n == 1) return 1;
+
+              return Fibonacci(n - 1) + Fibonacci(n - 2);
+          }
+
+Review 3: "Improve variables and function naming"
+          "Change the for loop to for each for better readability"
+          Corrected Code: 
+          List<string> cityNames = new[] { "Austin", "New York", "San Francisco" };
+          foreach (var city in cityNames)
+          {
+              GetArea();
+              GetPopulation();
+
+              // ...
+              // ...
+              // ...
+              // Wait, what is `city` for again?
+              Dispatch(city);
+          }
+ Review 4 : "Remove magic number"
+           Corrected code:
+           const int ADMIN = 8;
+            if (userRole == ADMIN) // Check if Admin 
+            {
+                
+            }
+
+Review 5 : "Prefix Car is not nesessray"
+          Corrected code:
+          public class Car
+            {
+                public string Make { get; set; }
+                public string Model { get; set; }
+                public string Color { get; set; }
+
+                //...
+            }
+
+Review 6:  "Removed magic string"
+
+            Corrected code:
+            private const string DefaultBreweryName = "Hipster Brew Co.";
+
+            public void CreateMicrobrewery(string name = null)
+            {
+                var breweryName = string.IsNullOrWhiteSpace(name) ? DefaultBreweryName : name;
+                // ...
+            }
