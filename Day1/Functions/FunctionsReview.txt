@@ -1,0 +1,22 @@
+Review 1 : "Impure function"
+
+Review 2 : "Return type is viod but function returns a value"
+
+Review 3 : "Contains double negatives"
+
+Review 5 : "A lof of operations are nested into one line which makes it less readable and function has a return type but does not return anything"
+
+Review 6: ""
+          public void CreateFile(string name, bool createTempFile = false)
+          {   var fileName;
+              if (createTempFile)
+              {
+                  fileName = "./temp/" + name;
+              }
+              else{
+                  fileName = name;
+              }
+              Touch(fileName);
+          }
+
+Review 8: "Can create a struct or class instead of too many parameters"
